@@ -3,3 +3,5 @@ gunicorn
 beautifulsoup4
 mecab-python3
 flask-cors
+transformers
+torch
