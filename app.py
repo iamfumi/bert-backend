@@ -1,12 +1,13 @@
 from flask import Flask, request, jsonify
-from transformers import BertTokenizer, BertForSequenceClassification
+from transformers import BertTokenizer, BertForSequenceClassification, AutoTokenizer, AutoModel
 import torch
 
 # Flaskアプリの初期化
 app = Flask(__name__)
 
 # モデルとトークナイザーの名前
-MODEL_NAME = "cl-tohoku/bert-base-japanese"
+# MODEL_NAME = "cl-tohoku/bert-base-japanese"
+MODEL_NAME = "line-corporation/line-distilbert-base-japanese"
 
 # モデルとトークナイザーのロード
 try:
